@@ -34,7 +34,7 @@ $nomessage = "<font size=4 color=red>请输入短信内容!</font>";           /
         #var_dump($_POST);
         if($_POST[pmessage]=="") echo $nomessage; 
         else{
-            $output = shell_exec('python /Users/liu/Sites/Model/demoAPI.py'.' '.$_POST[pmessage]);
+            $output = shell_exec('python ./Model/demoAPI.py'.' '.$_POST[pmessage]);
             echo"<font color=#246183>各分类器检测结果如下</font> </br></br></br>";
             #返回结果形如：LR:[u'1'],RF:[u'1']
             $array = explode(',', $output);
@@ -54,8 +54,8 @@ $nomessage = "<font size=4 color=red>请输入短信内容!</font>";           /
         </center>
         <div id="notice">
             支持多种分类器：KNN, LR, RF, DT, GBDT, SVM, MultinomialNB, BernoulliNB<BR>
-        <p align=center>
-            Powered by <a href=http://JackieLiu.win>Jackie Liu</a>
+        
+            
         </div>
     </div>
 </body>

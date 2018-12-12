@@ -49,8 +49,7 @@
         </form>
         <div id="notice">
             支持多种分类器：KNN, LR, RF, DT, GBDT, SVM, MultinomialNB, BernoulliNB<BR>
-        <p align=center>
-            Powered by <a href=http://JackieLiu.win>Jackie Liu</a>
+        
         </div>
     </div>
 </body>
